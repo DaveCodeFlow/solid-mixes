@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0e0e0e;
+    color: #fff;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .mix {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #1a1a1a;
+    border-radius: 8px;
+  }
+  
+  .mix h2 {
+    margin: 0 0 0.5rem;
+  }
+
+  .featured { 
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
+  }
+  
