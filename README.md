@@ -10,3 +10,8 @@ The goal of this project is twofold:
 The website embeds Mixcloud mixes and is entirely self-managed.
 
 The project has been deliberately kept simple to focus on understandable, maintainable code and learning objectives.
+
+## Future improvements
+- Filtering or sorting mixes
+- Highlighting a featured mix
+- Improved styling and responsive layout
