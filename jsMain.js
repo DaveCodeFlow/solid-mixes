@@ -1,3 +1,5 @@
+console.log("JS loaded");
+
 const mixes = [
     {
       title: "SOLID – Episode 01",
@@ -12,7 +14,13 @@ const mixes = [
   ];
     
   const container = document.getElementById("mixes");
-  
+  const toggleButton = document.getElementById("themeToggle");
+  console.log(toggleButton);
+    toggleButton.addEventListener("click",() => { 
+      console.log("button clicked");
+      document.body.classList.toggle("dark")
+    })
+ 
   mixes.forEach((mix, index) => {
     const section = document.createElement("section");
     section.className = "mix";
@@ -20,7 +28,7 @@ const mixes = [
     if (index === 0) { 
       section.classList.add("featured") 
     };
-  
+
     section.innerHTML = `
       <h2>${mix.title}</h2>
       <span>${mix.date}</span>
@@ -33,5 +41,10 @@ const mixes = [
     `;
   
     container.appendChild(section);
-  });
+
+
+  })
+
+ 
+  
   

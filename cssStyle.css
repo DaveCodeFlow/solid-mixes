@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background: #0e0e0e;
     color: #fff;
+    transition: background 0.3s ease;
   }
   
   header {
@@ -26,4 +27,20 @@ body {
     border: 2px solid #ff4d4d;
     box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
   }
+
+  .dark { 
+    background-color: white;
+    color: black;
+  }
   
+  #themeToggle {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #c3102b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
