@@ -1,35 +1,41 @@
 console.log("JS loaded");
 
 const mixes = [
-    {
-      title: "SOLID – Episode 01",
-      date: "Jan 2026",
-      mixcloudUrl: "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-01/"
-    },
-    {
-      title: "SOLID – Episode 02",
-      date: "Feb 2026",
-      mixcloudUrl: ""
-    }
-  ];
-    
-  const container = document.getElementById("mixes");
-  const toggleButton = document.getElementById("themeToggle");
-  console.log(toggleButton);
-    toggleButton.addEventListener("click",() => { 
-      console.log("button clicked");
-      document.body.classList.toggle("dark")
-    })
- 
-  mixes.forEach((mix, index) => {
-    const section = document.createElement("section");
-    section.className = "mix";
+  {
+    title: "SOLID – Episode 01",
+    date: "Jan 2026",
+    mixcloudUrl:
+      "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-01/",
+  },
+  {
+    title: "SOLID – Episode 02",
+    date: "Feb 2026",
+    mixcloudUrl: "",
+  },
+];
 
-    if (index === 0) { 
-      section.classList.add("featured") 
-    };
+const container = document.getElementById("mixes");
+const toggleButton = document.getElementById("themeToggle");
+console.log(toggleButton);
+toggleButton.addEventListener("click", () => {
+  // console.log("button clicked");
+  document.body.classList.toggle("light");
+  if (document.body.classList.contains("light")) {
+    toggleButton.textContent = "Dark mode";
+  } else {
+    toggleButton.textContent = "Light mode";
+  }
+});
 
-    section.innerHTML = `
+mixes.forEach((mix, index) => {
+  const section = document.createElement("section");
+  section.className = "mix";
+
+  if (index === 0) {
+    section.classList.add("featured");
+  }
+
+  section.innerHTML = `
       <h2>${mix.title}</h2>
       <span>${mix.date}</span>
       <iframe 
@@ -39,12 +45,6 @@ const mixes = [
         frameborder="0">
       </iframe>
     `;
-  
-    container.appendChild(section);
 
-
-  })
-
- 
-  
-  
+  container.appendChild(section);
+});

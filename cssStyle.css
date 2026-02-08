@@ -28,7 +28,7 @@ body {
     box-shadow: 0 0 15px rgba(255, 77, 77, 0.4);
   }
 
-  .dark { 
+  .light { 
     background-color: white;
     color: black;
   }
@@ -38,8 +38,8 @@ body {
   margin: 1rem auto;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  background: #c3102b;
-  color: white;
+  background: #10c355;
+  color: rgb(2, 2, 2);
   border: none;
   border-radius: 5px;
   font-weight: bold;
