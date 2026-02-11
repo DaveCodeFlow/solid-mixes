@@ -10,7 +10,8 @@ const mixes = [
   {
     title: "SOLID – Episode 02",
     date: "Feb 2026",
-    mixcloudUrl: "",
+    mixcloudUrl: 
+    "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-02/"
   },
 ];
 
@@ -31,7 +32,7 @@ mixes.forEach((mix, index) => {
   const section = document.createElement("section");
   section.className = "mix";
 
-  if (index === 0) {
+  if (index === 1) {
     section.classList.add("featured");
   }
 
