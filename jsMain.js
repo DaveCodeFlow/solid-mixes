@@ -3,13 +3,13 @@ console.log("JS loaded");
 const mixes = [
   {
     title: "SOLID – Episode 01",
-    date: "Jan 2026",
+    date: "<span class='mix-date'>Jan 2026</span>",
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-01/",
   },
   {
     title: "SOLID – Episode 02",
-    date: "Feb 2026",
+    date: "<span class='mix-date'>Feb 2026</span>",
     mixcloudUrl: 
     "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-02/"
   },

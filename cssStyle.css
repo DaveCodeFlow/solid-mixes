@@ -10,13 +10,33 @@ body {
     text-align: center;
     padding: 2rem 1rem;
   }
-  
+
+  .sub-line {
+    font-size: 0.7em;
+    color: #2ecc71;
+    display: block; /* Zorgt dat de kleinere tekst netjes op een eigen regel blijft */
+    font-weight: normal; /* Optioneel: maakt de tweede regel minder dik voor contrast */
+    text-shadow: 0 0 5px rgba(46, 204, 113, 0.6), 0 0 10px rgba(46, 204, 113, 0.4);
+  }
+
+  .sub-line2 { 
+    font-size: 1rem;
+    font-weight: normal;;
+    opacity: 0.8
+  }
+
   .mix {
     max-width: 600px;
     margin: 2rem auto;
     padding: 1rem;
     background: #1a1a1a;
     border-radius: 8px;
+  }
+
+  .mix-date {
+    font-size: 0.8em; /* Maakt de tekst kleiner dan de titel */
+    color: #888;    /* Optioneel: een grijze kleur voor een subtielere look */
+    display: block;  /* Zorgt dat de datum op een nieuwe regel komt */
   }
   
   .mix h2 {
@@ -33,14 +53,26 @@ body {
     color: black;
   }
   
-  #themeToggle {
-  display: block;
-  margin: 1rem auto;
-  padding: 0.5rem 1rem;
+ #themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+
   cursor: pointer;
-  background: #10c355;
-  color: rgb(2, 2, 2);
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
+  background: transparent;
+  color: darkcyan;
+  border: 1px solid;
+  border-radius: 20px;
+
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
+#themeToggle:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+ 
