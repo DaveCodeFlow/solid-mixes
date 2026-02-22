@@ -11,7 +11,11 @@ The website embeds Mixcloud mixes and is entirely self-managed.
 
 The project has been deliberately kept simple to focus on understandable, maintainable code and learning objectives.
 
-## Future improvements
+## Realised improvements
 - Filtering or sorting mixes
 - Highlighting a featured mix
-- Improved styling and responsive layout
+- Styling and responsive layout
+- Sorting data (latest mix on top)
+
+## Future improvements
+To be determined
