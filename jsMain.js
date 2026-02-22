@@ -48,12 +48,12 @@ sortedMixes.forEach((mix, index) => {
   section.innerHTML = `
   <h2>${mix.title}</h2>
   <span class="mix-date">${mix.date}</span>
-  <iframe 
-    src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=0&feed=${encodeURIComponent(mix.mixcloudUrl)}"
-    width="100%"
-    height="240"
-    frameborder="0">
-  </iframe>
+  <div class="player-wrapper">
+    <iframe 
+      src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&light=0&feed=${encodeURIComponent(mix.mixcloudUrl)}"
+      frameborder="0">
+    </iframe>
+  </div>
 `;
 
   container.appendChild(section);
