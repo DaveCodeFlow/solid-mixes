@@ -51,7 +51,7 @@ sortedMixes.forEach((mix, index) => {
   <iframe 
     src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=0&feed=${encodeURIComponent(mix.mixcloudUrl)}"
     width="100%"
-    height="120"
+    height="200"
     frameborder="0">
   </iframe>
 `;
