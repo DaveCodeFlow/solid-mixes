@@ -50,8 +50,7 @@ sortedMixes.forEach((mix, index) => {
   <span class="mix-date">${mix.date}</span>
   <div class="player-wrapper">
     <iframe 
-      src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&light=0&feed=${encodeURIComponent(mix.mixcloudUrl)}"
-      frameborder="0">
+      src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&mini=0&light=0&feed=${encodeURIComponent(mix.mixcloudUrl)}"      frameborder="0">
     </iframe>
   </div>
 `;
