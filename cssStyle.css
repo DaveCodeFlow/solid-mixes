@@ -34,7 +34,7 @@ body {
   }
 
   .mix-date {
-    font-size: 0.8em; /* Maakt de tekst kleiner dan de titel */
+    font-size: 0.8em; /* Text kleiner dan titel */
     color: #888;    /* Optioneel: een grijze kleur voor een subtielere look */
     display: block;  /* Zorgt dat de datum op een nieuwe regel komt */
   }
