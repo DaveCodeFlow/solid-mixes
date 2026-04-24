@@ -19,6 +19,12 @@ const mixes = [
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-03/",
   },
+   {
+    title: "SOLID – Episode 04",
+    date: "2026-04-24",
+    mixcloudUrl:
+      "https://www.mixcloud.com/DJ_Dave_K/solid-4-steady-beats-strong-flow-special-hard-trance-hardcore-edition/",
+  },
 ];
 
 const container = document.getElementById("mixes");
