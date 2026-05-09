@@ -3,24 +3,29 @@ console.log("JS loaded");
 const mixes = [
   {
     title: "SOLID – Episode 01",
+    isLimited: false,
     date: "2026-01-01",
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-01/",
   },
   {
     title: "SOLID – Episode 02",
+    isLimited: false,
     date: "2026-02-10",
+    isLimited: false,
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-02/",
   },
   {
     title: "SOLID – Episode 03",
+    isLimited: false,
     date: "2026-02-21",
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-steady-beats-strong-flow-episode-03/",
   },
    {
     title: "SOLID – Episode 04",
+    isLimited: true,
     date: "2026-04-24",
     mixcloudUrl:
       "https://www.mixcloud.com/DJ_Dave_K/solid-4-steady-beats-strong-flow-special-hard-trance-hardcore-edition/",
@@ -52,6 +57,7 @@ sortedMixes.forEach((mix, index) => {
   }
 
   section.innerHTML = `
+  ${mix.isLimited ? '<div class="badge">⏳ Available for a limited time</div>' : ''}
   <h2>${mix.title}</h2>
   <span class="mix-date">${mix.date}</span>
   <div class="player-wrapper">
